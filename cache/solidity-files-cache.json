@@ -1,8 +1,8 @@
 {
   "_format": "hh-sol-cache-2",
   "files": {
-    "/home/kadircan/angular-projects/ERC-20/contracts/Context.sol": {
-      "lastModificationDate": 1659961690041,
+    "/home/kadircan/projects/hardhat-projects/ERC20-template/contracts/Context.sol": {
+      "lastModificationDate": 1660032008951,
       "contentHash": "7152c4be9ba9bcf8ec97955ce1220374",
       "sourceName": "contracts/Context.sol",
       "solcConfig": {
@@ -36,9 +36,9 @@
         "Context"
       ]
     },
-    "/home/kadircan/angular-projects/ERC-20/contracts/ERC20.sol": {
-      "lastModificationDate": 1659962659481,
-      "contentHash": "12a453a7c7a8e197863602571680f3ff",
+    "/home/kadircan/projects/hardhat-projects/ERC20-template/contracts/ERC20.sol": {
+      "lastModificationDate": 1660037997851,
+      "contentHash": "c3d6ffee621b65637128a9cfc3fc9cb0",
       "sourceName": "contracts/ERC20.sol",
       "solcConfig": {
         "version": "0.8.9",
@@ -65,17 +65,19 @@
       },
       "imports": [
         "./IERC20.sol",
-        "./Context.sol"
+        "./Context.sol",
+        "./IERC20Metadata.sol"
       ],
       "versionPragmas": [
         "^0.8.0"
       ],
       "artifacts": [
-        "ERC20"
+        "ERC20",
+        "Osman"
       ]
     },
-    "/home/kadircan/angular-projects/ERC-20/contracts/IERC20.sol": {
-      "lastModificationDate": 1659960155061,
+    "/home/kadircan/projects/hardhat-projects/ERC20-template/contracts/IERC20.sol": {
+      "lastModificationDate": 1660032008951,
       "contentHash": "8cfc66468ac4e1721c40383a19518045",
       "sourceName": "contracts/IERC20.sol",
       "solcConfig": {
@@ -107,6 +109,43 @@
       ],
       "artifacts": [
         "IERC20"
+      ]
+    },
+    "/home/kadircan/projects/hardhat-projects/ERC20-template/contracts/IERC20Metadata.sol": {
+      "lastModificationDate": 1660032008951,
+      "contentHash": "3eccbaaa85f63dab11d0083e5e229be5",
+      "sourceName": "contracts/IERC20Metadata.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IERC20.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC20Metadata"
       ]
     }
   }
